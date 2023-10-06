@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+
+* {
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #C4C4C4;
+  color: #7A7A7A;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 400px) {
+ 
+
+  .Login-Container {
+      max-width: 100vw;
+
   }
+
+  .Login-Container>p {
+      font-size: 1.5rem !important;
+      margin-top: 0.15rem !important;
+  }
+.holder{
+  display: block !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+
+.holder {
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+
+}
+
+.Login-Container {
+  background-color: white;
+  border: 4px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 500px;
+  height: auto;
+}
+
+.Login-Container>p {
+
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.email-div {
+  margin-top: 0.5rem;
+
+
+
+}
+
+.email-div>input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid whitesmoke;
+  margin-top: 0.5rem;
+}
+
+.password-div {
+
+  margin-top: 0.5rem;
+
+  position: relative;
+
+}
+
+.password-div>input {
+
+  width: 100%;
+  padding: 10px;
+  border: 2px solid whitesmoke;
+  margin-top: 0.5rem;
+
+}
+
+.end-login {
+
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 10px;
+}
+
+
+
+.login-btn {
+  background-color: #f0412e;
+  border: none;
   color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 3px;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.btn-div {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.last-form {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  gap: 0.25rem;
+
+}
+
+.red-form-txt {
+
+  color: rgb(234, 14, 14);
 }
